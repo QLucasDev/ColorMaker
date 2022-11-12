@@ -1,11 +1,16 @@
-﻿namespace Color_Maker;
+﻿using CommunityToolkit.Maui;
+
+namespace Color_Maker;
 
 public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
-		builder
+
+        builder.UseMauiApp<App>().UseMauiCommunityToolkit();
+
+        builder
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{

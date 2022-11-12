@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wp5hBXX0nnK1Ziy6mGCrNGbVBDACzIsnwtPmaKCp/DlrljvmRy9fq05tB8AtvvewtDeBadka4n2tsUD3LbQBOQ==",
+  "dgSpecHash": "hkJZjW+OD1F6iNc2XmCVkaqNQbBk1mMvwEQKIssWAPsSL9skZWhWfgczvIY/XKkQZENWimBPlC7CiBiYVGOK8w==",
   "success": true,
   "projectFilePath": "C:\\Workspace\\MAUI\\ColorMaker\\Color Maker\\Color Maker\\Color Maker.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lucas\\.nuget\\packages\\communitytoolkit.maui\\1.3.0\\communitytoolkit.maui.1.3.0.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\communitytoolkit.maui.core\\1.3.0\\communitytoolkit.maui.core.1.3.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

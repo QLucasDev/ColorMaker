@@ -3,39 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Color_Maker.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <ContentPage.Resources>
+        <Color x:Key="Primary">#AB3527</Color>
+        <Color x:Key="Secondary">#775752</Color>
+        <Color x:Key="Tertiary">#705C2E</Color>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+    </ContentPage.Resources>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+    <Grid x:Name="Container" BackgroundColor="Black">
+        <Frame Margin="10,0,10,0" VerticalOptions="Center">
+            <VerticalStackLayout Spacing="15" VerticalOptions="Center">
+                <Label FontAttributes="Bold"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       Text="Color Maker"/>
+                <Label Text="Red Value:"/>
+                <Slider x:Name="sldRed"
+                        ValueChanged="sld_ValueChanged"
+                        ThumbColor="{StaticResource Primary}"
+                        MaximumTrackColor="{StaticResource Tertiary}"
+                        MinimumTrackColor="{StaticResource Secondary}"/>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+                <Label Text="Green Value:"/>
+                <Slider x:Name="sldGreen"
+                        ValueChanged="sld_ValueChanged"
+                        ThumbColor="{StaticResource Primary}"
+                        MaximumTrackColor="{StaticResource Tertiary}"
+                        MinimumTrackColor="{StaticResource Secondary}"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                <Label Text="Blue Value:"/>
+                <Slider x:Name="sldBlue"
+                        ValueChanged="sld_ValueChanged"
+                        ThumbColor="{StaticResource Primary}"
+                        MaximumTrackColor="{StaticResource Tertiary}"
+                        MinimumTrackColor="{StaticResource Secondary}"/>
 
-        </VerticalStackLayout>
-    </ScrollView>
+                <Frame CornerRadius="25" HorizontalOptions="Center">
+                    <HorizontalStackLayout>
+                        <Label x:Name="lblHex" 
+                               HorizontalTextAlignment="End"
+                               Text="HEX Value: #000000"/>
+
+                        <ImageButton Margin="10,0,0,0"
+                                     HeightRequest="25"
+                                     WidthRequest="25"
+                                     Source="copy.png"
+                                     VerticalOptions="Center"
+                                     Clicked="ImageButton_Clicked"
+                                     />
+                    </HorizontalStackLayout>
+                </Frame>
+                <Button x:Name="btnRandom"
+                        Clicked="btnRandom_Clicked"
+                        BackgroundColor="{StaticResource Primary}"
+                        Text="Generate Random Color"/>
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
 
 </ContentPage>

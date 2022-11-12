@@ -1,0 +1,1 @@
+C:\Workspace\MAUI\ColorMaker\Color Maker\Color Maker\Color Maker.csproj;x64
